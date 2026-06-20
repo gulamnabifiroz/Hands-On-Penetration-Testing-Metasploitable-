@@ -7,7 +7,6 @@ A security research portfolio demonstrating hands-on penetration testing methodo
 
 * **Objective:** Conduct authorized penetration testing to identify and exploit network vulnerabilities.
 * **Scope:** Metasploitable environment targeting legacy protocols (FTP, SSH, HTTP, SMB).
-* **Outcome:** Developed custom automated scripts and documented reproducible proof-of-concept (PoC) attacks.
 
 ## Technical Stack
 
@@ -24,6 +23,12 @@ A security research portfolio demonstrating hands-on penetration testing methodo
 ├── scanner/                # Nmap NSE scripts and automated port scanners
 └── docs/                   # Detailed write-ups and mitigation strategies
 ```
+## CVE 
+* Vulnerability: VSFTPD Backdoor
+* CVE: CVE-2011-2523
+* Severity: Critical
+* CVSS: 10.0
+* Impact: Remote Code Execution
 
 ## Methodology & Key Deliverables
 
@@ -32,9 +37,6 @@ Utilized advanced Nmap scanning techniques to map network topology, perform bann
 
 #### 2. Exploitation & Access Gaining
 * **Port 21 (FTP):** Exploited the Vsftpd 2.3.4 backdoor to gain root shell access.
-* **Port 22 (SSH):** Developed Python scripts to identify weak administrative credentials via brute-force simulation.
-* **Port 80 (HTTP):** Leveraged web application flaws to execute remote code execution (RCE).
-
 #### 3. Reporting & Mitigation
 Documented root-cause analysis for each vulnerability and provided actionable remediation steps to secure the underlying operating systems.
 
